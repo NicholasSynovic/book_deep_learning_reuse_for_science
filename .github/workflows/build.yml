@@ -37,7 +37,7 @@ jobs:
 
       - name: Generate HTML using Sphinx
         run: |
-          python3 -m sphinx-build -M html dl4s_book build
+          ./venv/bin/python3 -m sphinx-build -M html dl4s_book build
 
       - name: Publish HTML to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
