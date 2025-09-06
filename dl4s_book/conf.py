@@ -1,5 +1,3 @@
-from importlib.metadata import version
-
 # Configuration file for the Sphinx documentation builder.
 #
 # For the full list of built-in configuration values, see the documentation:
@@ -11,7 +9,7 @@ from importlib.metadata import version
 project = "Deep Learning Reuse For Science"
 copyright = "2025, Nicholas M. Synovic"
 author = "Nicholas M. Synovic"
-release = version(distribution_name="dl4s_book")
+release = "0.0.1"
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -25,5 +23,5 @@ exclude_patterns = []
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_theme = "alabaster"
+html_theme = "sphinx_book_theme"
 html_static_path = ["_static"]
