@@ -6,32 +6,41 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
-
-    permissions:
-      contents: write
-
     steps:
-    - uses: actions/checkout@v4
-      with:
-        persist-credentials: false
+      - uses: actions/checkout@v2
 
-    - name: Build HTML
-      uses: ammaraskar/sphinx-action@master
-      with:
-        docs-folder: "dl4s_book/"
-        build-command: "sphinx-build -b html . build"
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.13'
 
-    - name: Upload artifacts
-      uses: actions/upload-artifact@v4
-      with:
-        name: html-docs
-        path: build/html/
+      - name: Install uv
+        run: |
+          python3 -m pip install uv
 
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      if: github.ref == 'refs/heads/main'
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: build/html
+      - name: Get uv cache dir
+        id: uv-cache
+        run: echo "::set-output name=dir::$(uv cache dir)"
+
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: ${{ steps.uv-cache.outputs.dir }}
+          key: ${{ runner.os }}-uv-${{ hashFiles('**/uv.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-uv-
+
+      - name: Install dependencies
+        run: python3 -m uv sync
+
+      - name: Generate HTML using Sphinx
+        run: |
+          make build_project
+
+      - name: Publish HTML to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build/html
