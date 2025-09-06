@@ -95,7 +95,7 @@ wheels = [
 ]
 
 [[package]]
-name = "dl4s-book"
+name = "dlr4s-book"
 version = "0.0.1"
 source = { editable = "." }
 dependencies = [
