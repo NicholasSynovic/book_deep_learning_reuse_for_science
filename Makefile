@@ -3,7 +3,7 @@ build_project:
 	rm -rf dist/
 	uv build
 	uv pip install dist/*.tar.gz
-	sphinx-build -M html dl4s_book build
+	sphinx-build --write-all dlr4s_book build
 
 create-dev:
 	pre-commit install
@@ -12,4 +12,4 @@ create-dev:
 	uv build
 
 serve:
-	python -m http.server -d build/html 12300
+	python -m http.server -d build 12300

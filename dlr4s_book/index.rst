@@ -1,16 +1,61 @@
-.. Deep Learning Reuse For Science documentation master file, created by
-   sphinx-quickstart on Sat Sep  6 15:56:57 2025.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+###############################
+Deep Learning Reuse For Science
+###############################
 
-Deep Learning Reuse For Science documentation
-=============================================
+Written by Nicholas M. Synovic
 
-Add your content using ``reStructuredText`` syntax. See the
-`reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
-documentation for details.
+Preface
+=======
 
+One paragraph intro about reuse in SE, DL, and the challenges in
+SE4SCi
+
+Who the book is for
+
+How the book is organized + how to navigate it
+
+Acknowledgements
+================
+
+COMP 501 classmate
+
+GKT + JD
+
+My family
+
+Bennie​
+
+Melissa​
+
+Authors
+=======
+
+One paragraph about me and my prior work​
+
+Link to my website​
+
+Discussion page about the book​
 
 .. toctree::
+   :caption: Part 1
    :maxdepth: 2
-   :caption: Contents:
+
+   chapter_1
+   chapter_2
+   chapter_3
+
+.. toctree::
+   :caption: Part 2
+   :maxdepth: 2
+
+   chapter_4
+   chapter_5
+   chapter_6
+
+.. toctree::
+   :caption: Part 3
+   :maxdepth: 2
+
+   chapter_7
+   chapter_8
+   chapter_9
