@@ -1,7 +1,7 @@
 [project]
-name = "src"
+name = "book"
 version = "0.0.0"
-description = "Hello World"
+description = "Deep Learning Reuse For Science"
 authors = [{ name = "Nicholas M. Synovic", email = "nicholas.synovic@gmail.com" }]
 requires-python = "~=3.13"
 readme = "README.md"
@@ -18,12 +18,8 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/NicholasSynovic/template_python"
-Repository = "https://github.com/NicholasSynovic/template_python"
-
-[project.scripts]
-src = "src.main:main"
-
+Homepage = "https://github.com/NicholasSynovic/book_deep_learning_reuse_for_science"
+Repository = "https://github.com/NicholasSynovic/book_deep_learning_reuse_for_science"
 
 [build-system]
 requires = ["hatchling"]
