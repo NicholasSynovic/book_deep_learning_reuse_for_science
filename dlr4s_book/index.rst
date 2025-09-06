@@ -43,14 +43,6 @@ Link to my website​
 Discussion page about the book​
 
 .. toctree::
-   :includehidden:
-   :caption: Frontmatter
-   :maxdepth: 2
-
-   self
-
-
-.. toctree::
    :caption: Part 1
    :maxdepth: 2
 
