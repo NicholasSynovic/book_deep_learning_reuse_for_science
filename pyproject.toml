@@ -12,6 +12,10 @@ classifiers = [
     "License :: OSI Approved :: GNU Affero General Public License v3",
     "Programming Language :: Python :: 3.13"
 ]
+dependencies = [
+    "sphinx>=8.2.3",
+    "sphinx-book-theme>=1.1.4",
+]
 
 [project.urls]
 Homepage = "https://github.com/NicholasSynovic/template_python"
