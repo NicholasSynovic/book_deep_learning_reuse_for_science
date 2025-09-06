@@ -4,6 +4,8 @@ Deep Learning Reuse For Science
 
 Written by Nicholas M. Synovic
 
+.. _preface:
+
 Preface
 =======
 
@@ -13,6 +15,8 @@ SE4SCi
 Who the book is for
 
 How the book is organized + how to navigate it
+
+.. _acknowledgements:
 
 Acknowledgements
 ================
@@ -27,6 +31,8 @@ Bennie​
 
 Melissa​
 
+.. _authors:
+
 Authors
 =======
 
@@ -35,6 +41,14 @@ One paragraph about me and my prior work​
 Link to my website​
 
 Discussion page about the book​
+
+.. toctree::
+   :includehidden:
+   :caption: Frontmatter
+   :maxdepth: 2
+
+   self
+
 
 .. toctree::
    :caption: Part 1

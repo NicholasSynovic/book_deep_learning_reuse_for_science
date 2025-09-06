@@ -25,3 +25,10 @@ exclude_patterns = []
 
 html_theme = "sphinx_book_theme"
 html_static_path = ["_static"]
+
+# https://sphinx-book-theme.readthedocs.io/en/latest/tutorials/get-started.html#add-a-source-repository-button-to-your-theme
+html_theme_options = {
+    "repository_url": "https://github.com/NicholasSynovic/book_deep_learning_reuse_for_science",
+    "use_repository_button": True,
+}
+html_title = project
