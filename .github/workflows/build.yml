@@ -1,40 +1,34 @@
-name: Build And Release On Tag
-
+name: Build and deploy
 on:
-  workflow_dispatch:
   push:
-    tags:
-      - '*'
-
-permissions:
-  contents: write
-  id-token: write
+    branches:
+      - main
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
     steps:
-      - name: Checkout latest commit
-        uses: actions/checkout@v4
-        with:
-            show-progress: true
-            lfs: false
+    - uses: actions/checkout@v4
+      with:
+        persist-credentials: false
 
-      - name: Setup Python 3.10 x64
-        uses: actions/setup-python@v5
-        with:
-            python-version: '3.10'
-            architecture: 'x64'
+    - name: Build HTML
+      uses: ammaraskar/sphinx-action@master
 
-      - name: Build the project
-        run: |
-          pip install pre-commit
-          make create-dev
-          source env/bin/activate
-          make build
-          make package
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: html-docs
+        path: docs/build/html/
 
-      - name: Release the project
-        uses: softprops/action-gh-release@v2
-        with:
-          files: ./dist/src
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      if: github.ref == 'refs/heads/main'
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: docs/build/html
