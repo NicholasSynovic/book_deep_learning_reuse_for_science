@@ -83,9 +83,9 @@ https://nicholassynovic.github.io
    :caption: Part 1
    :maxdepth: 2
 
-   chapter_1
-   chapter_2
-   chapter_3
+   Software Engineering Overview <chapter_1>
+   Deep Learning Overview <chapter_2>
+   Research On Research Software Engineering Overview <chapter_3>
 
 .. toctree::
    :caption: Part 2
