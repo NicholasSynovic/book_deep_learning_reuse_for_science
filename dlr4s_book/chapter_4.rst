@@ -15,7 +15,7 @@ similar sources, integrating the replication into new projects. An
 engineer might do this because of licensing issues or if they are
 required to use a particular deep learning framework (eg TensorFlow) but
 are reusing ideas previously realized in another deep learning framework
-(\eg PyTorch)~\cite{Intro2TFMG}. This paradigm is related to
+(eg PyTorch). This paradigm is related to
 Sommerville's notion of abstraction reuse, where an engineer reuses
 knowledge but not code directly. This paradigm is also related to
 reproducibility in the scientific sense, since an engineer independently
