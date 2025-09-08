@@ -80,25 +80,17 @@ You can read more of my writing at my website:
 https://nicholassynovic.github.io
 
 .. toctree::
-   :caption: Part 1
+   :caption: Fundamentals
    :maxdepth: 2
 
    Software Engineering Overview <chapter_1>
-   Deep Learning Overview <chapter_2>
-   Research On Research Software Engineering Overview <chapter_3>
+   Research Software Engineering Overview <chapter_2>
+   Deep Learning Overview <chapter_3>
+   Deep Learning Reuse Overview <chapter_4>
 
 .. toctree::
-   :caption: Part 2
+   :caption: Deep Learning Reuse
    :maxdepth: 2
 
-   chapter_4
-   chapter_5
-   chapter_6
-
-.. toctree::
-   :caption: Part 3
-   :maxdepth: 2
-
-   chapter_7
-   chapter_8
-   chapter_9
+   Deep Learning Reuse In Software Engineering <chapter_5>
+   Deep Learning Reuse In Computational Natural Science <chapter_6>
