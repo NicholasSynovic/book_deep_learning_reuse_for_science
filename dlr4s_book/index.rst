@@ -4,6 +4,45 @@
 
 Written by Nicholas M. Synovic
 
+.. todo::
+
+   Identify 4 books on each of the following subjects
+
+   - classic books on software construction,
+   - teaching engineering education, and
+   - software engineering
+
+   Synthesize the first 3 chapters of each for Chapter 1
+
+.. todo::
+
+   Identify 4 books on each of the following subjects
+
+   - classic books research,
+   - research education
+   - scientific process
+   - software engineering for science
+
+   Synthesize the first 3 chapters of each for Chapter 2
+
+.. todo::
+
+   Identify 4 books on each of the following subjects
+
+   - machine learning,
+   - deep learning
+   - expert systems
+   - symbolic learning
+
+   Synthesize the first 3 chapters of each for Chapter 3
+
+.. todo::
+
+   For each section, subsection, and subsubsection, add figures.
+
+   30 figures minimum
+
+
 .. _preface:
 
 *********
