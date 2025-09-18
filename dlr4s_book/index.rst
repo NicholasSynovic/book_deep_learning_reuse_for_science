@@ -16,17 +16,6 @@ Written by Nicholas M. Synovic
 
 .. todo::
 
-   Identify 4 books on each of the following subjects
-
-   - machine learning,
-   - deep learning
-   - expert systems
-   - symbolic learning
-
-   Synthesize the first 3 chapters of each for Chapter 3
-
-.. todo::
-
    For each section, subsection, and subsubsection, add figures.
 
    30 figures minimum
