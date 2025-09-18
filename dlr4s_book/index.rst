@@ -18,17 +18,6 @@ Written by Nicholas M. Synovic
 
    Identify 4 books on each of the following subjects
 
-   - classic books research,
-   - research education
-   - scientific process
-   - software engineering for science
-
-   Synthesize the first 3 chapters of each for Chapter 2
-
-.. todo::
-
-   Identify 4 books on each of the following subjects
-
    - machine learning,
    - deep learning
    - expert systems

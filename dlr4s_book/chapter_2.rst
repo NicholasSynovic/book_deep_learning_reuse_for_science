@@ -2,6 +2,22 @@
  Research Software Engineering Overview
 ########################################
 
+.. note::
+
+   Identify 4 books on each of the following subjects
+
+   -  classic books research (done),
+   -  https://www.amazon.com/dp/1412995302
+   -  https://www.amazon.com/dp/1446294242
+   -  https://www.amazon.com/dp/1483349802
+   -  scientific process
+   -  https://www.amazon.com/How-We-Know-Exploration-Scientific/dp/030680140X?crid=1E89PRYDUQ6FW&rnid=2941120011&s=books&sprefix=scientific+proces%2Caps%2C206&sr=1-1
+   -  https://www.amazon.com/Scientific-Method-science-progress-academic/dp/B0CD98H34F?crid=1E89PRYDUQ6FW&rnid=2941120011&s=books&sprefix=scientific+proces%2Caps%2C206&sr=1-5
+   -  software engineering for science
+   -  https://www.google.com/books/edition/Software_Engineering_for_Science/xSgNDgAAQBAJ?hl=en&gbpv=1&dq=software+engineering+for+science&pg=PP1&printsec=frontcover
+
+   Synthesize the first 3 chapters of each for Chapter 2
+
 We previously defined software engineering as the practice of creating
 or improving software by leveraging the engineering design process. Now
 we are going to pivot and see how adding a pre-fix changes nearly the
